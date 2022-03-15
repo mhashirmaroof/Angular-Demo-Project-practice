@@ -1,0 +1,29 @@
+<div class="overlay-template" *ngIf="showOverlay"></div>
+<div class="container-fluid">
+    <div class="row rowcolor">
+        <div class="col-7 iconbg pt-1"><i class="fa fa-1x fa-bars circlebar"></i><img
+                src="../../assets/logo.png"></div>
+        <div class="col-2 pt-2"><i class="fa fa-cog"></i><i class="fa fa-bell bellpad"></i></div>
+        <div class="col-1 pt-2 my-1 admincol text-center"><i class="fa fa-user-o"></i> Admin</div>
+        <div class="col-2 pt-2 my-1">English<i class="fa fa-globe glodepading"></i></div>
+    </div>
+</div>
+<div class="container-fluid container2">
+    <div class="treeIcon"></div>
+    <i class="material-icons prefix treePosition" (click)="openclose()">account_tree</i>
+    <div class="businessModel" *ngIf="showBusinessModel"><img src="../../assets/active-bussines -template.svg"></div>
+    <div>
+        <app-viewcatagories *ngIf="isShowModal" class="showup"></app-viewcatagories>
+    </div>
+    <div class="container container1m">
+        <div class="row rowcolor borderrow1 py-3">
+            <div class="col-7 px-4">VIEW BUILDER</div>
+            <div class="col-2 text-end">Settings</div>
+            <div class="col-3"><a href="">view builder</a></div>
+        </div>
+        <div class="row row1">
+            <div class="col-12 col12-1 text-center">Start building view or edit existing one</div>
+        </div>
+
+    </div>
+</div>

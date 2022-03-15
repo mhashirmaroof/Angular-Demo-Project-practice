@@ -1,0 +1,70 @@
+
+.row1{
+    border-bottom: 2px solid rgb(199, 199, 199);
+    font-weight: 550;
+}
+.fa-edit{
+    margin-right: 10px;
+}
+.col-1-border{
+    border-right: 2px solid rgb(199, 199, 199);
+    border-bottom: 2px solid rgb(199, 199, 199) ;
+}
+.textweight{
+    font-weight: 550;
+    border-bottom: 2px solid rgb(199, 199, 199) ;
+}
+.serviewbrdr{
+    border-right: 2px solid rgb(199, 199, 199);
+    font-weight: 550;
+}
+.colheight{
+    height: 550px;
+    border-right: 2px solid rgb(199, 199, 199);
+}
+.bgcolor{
+    background: rgb(230, 228, 228);
+    border-left: 10px solid white;
+}
+.closeimage{
+    height: 30px;
+    width: 30px;
+    background: lightblue;
+    border-radius: 30px;
+}
+.modelIcons{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+.fa-edit{
+    margin-left: 20px;
+    background: red;
+    color: blue;
+}
+.showupcat{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    background: white;
+    margin-left:50px;
+    width: 750px;
+    border-radius: 10px;
+    height: 380px;
+    z-index: 1030;
+}
+.showupview{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    background: white;
+    margin-left:-170px;
+    width: 750px;
+    border-radius: 10px;
+    height: 380px;
+    z-index: 1030;
+}
+tbody:active{
+    color: white;
+    background: lightblue;
+}

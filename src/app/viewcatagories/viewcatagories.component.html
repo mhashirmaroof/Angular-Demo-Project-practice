@@ -1,0 +1,69 @@
+<div class="overlay" *ngIf="showOverlay"></div>
+<div class="container animate__animated animate__fadeIn">
+    <div class="row row1 px-2 px-2 pt-2 pb-2">
+       <div class="col-11 pt-2">Views Catagories</div> 
+       <div class="col-1 text-end pt-2"><b><a href=""><img class=" closeimage"src="../../assets/closeIcon.svg"></a></b></div>
+    </div>
+    <div class="row">
+        <div class="col-1 textweight pt-2 pb-1">Catagory</div>
+        <div class="col-1 col-1-border text-end pt-2 pb-1">
+            <img class="modelIcons" src="../../assets/filterIcon.svg">
+            <img class="modelIcons" src="../../assets/addIcon.svg" (click)="showAddcat()">
+            <app-addcatagory *ngIf="showAddcatagory" class="showupcat" [showAddcatagory]="showAddcatagory" [editCatagoryData]="editcatagorydata" (catupdated)="showAddcat()" 
+              (catData)="catData($event)" (updateCatagory)="updateCatagory($event)"></app-addcatagory>
+        </div>
+
+        <div class="col-1 textweight pt-2 pb-1">Views</div>
+        <div class="col-1 col-1-border pt-2 pb-1 text-end">
+            <img class="modelIcons" src="../../assets/filterIcon.svg">
+            <img class="modelIcons" src="../../assets/addIcon.svg" (click)="showAddviews()">
+            <app-addview *ngIf="showAddview" class="showupview" [showAddviews]="showAddview" [editViewData]="editviewdata" (viewupdated)="showAddviews()" 
+              (viewData)="viewData($event)" (updateView)="updateView($event)"></app-addview>
+        </div>
+
+        <div class="col-8 pt-2 pb-1 serviewbrdr">Service View</div>
+    </div>
+    <div class="row">
+        <div class="col-2 colheight">
+            <table id="cattable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="active" *ngFor="let data of catarr; index as index">
+                    <td class="btn" (click)="openViewData(data.id);">
+                        {{data.catagoryname}}
+                    </td>
+                    <td>
+                        <div class="btn" (click)="onEditCat(data, index)"><i class="fa fa-pencil-square-o "></i></div>
+                        <div class="btn" (click)="onDeleteCat(index)"><i class="fa fa-trash-o"></i></div>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="col-2 colheight">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let data of Viewsarr.Views; index as index">
+                     <td class="btn">
+                        {{data.viewname}}
+                     </td>
+                     <td>
+                        <div class="btn" (click)="onEditView(data, index)"><i class="fa fa-pencil-square-o "></i></div>
+                        <div class="btn" (click)="onDeleteView(index)"><i class="fa fa-trash-o"></i></div>
+                     </td>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="col-8 colheight bgcolor"></div>
+    </div>
+</div>

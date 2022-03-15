@@ -1,0 +1,111 @@
+.rowcolor{
+    background: white;
+}
+.col-7 img{
+height: 35px;
+width: 260px;
+padding-left: 10px;
+}
+.circlebar{
+    border: 5px solid #cccbcb;
+    border-radius: 50%;
+    padding: 5px;
+}
+.iconbg{
+    background: white;
+}
+.bellpad{
+   padding-left: 45px; 
+}
+.admincol{
+    border-right: 3px solid rgb(221, 221, 221);
+    height: 35px;
+}
+.glodepading{
+    padding-left: 5px;
+}
+
+.container2{
+    background: rgb(241, 240, 240);
+    height:auto;
+    border:10px solid rgb(241, 240, 240);
+}
+.borderrow1{
+    border-bottom:3px solid rgb(218, 218, 218);
+    font-weight:550;
+}
+.row1{
+    height: 650px;
+    background: white;
+}
+.col12-1{
+    font-weight:550;
+    margin: auto;
+    color: grey;
+    margin-top: 300px;
+}
+.container1m{
+    margin-right:35px;
+    width: auto
+}
+.treeIcon {
+    position: absolute;
+    margin-top: 290px;
+    font-size: 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    background: white;
+    border-radius: 120px;
+    margin-left: 9px;
+    padding:17px;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    font-stretch: 0px;
+    transition-property:width;
+    transition-duration: 1500ms;
+    z-index: 85;
+}
+.treeIcon:hover{
+    width: 200px;
+}
+.treePosition{
+    position: absolute;
+    z-index: 130 !important;
+    margin-top: 307px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.businessModel{
+    content: '';
+    position: absolute;
+    margin-top: 273px;
+    height: 10px;
+    width: 75px;
+    margin-left: -7px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index:121;
+}
+.showup{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    background: white;
+    margin-left: 65px;
+    width: 1350px;
+    z-index: 120;
+    background-color: white;
+    border-left: 8px solid #0091d0;
+    border-radius: 7px;
+}
+.overlay-template {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 20;
+    padding-left: 7px;
+    background-color: rgba(0, 7, 27, 0.72);
+}

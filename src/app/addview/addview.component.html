@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row row1">
+      <div class="col-11 text-start pt-3"> CREATE NEW View</div>
+      <a class="col-1 text-end pt-3" (click)="closeAddview()"><img class=" closeimage"src="../../assets/closeIcon.svg"></a>
+    </div>
+  </div>
+  <div class="container-fluid bgcolorcnt">
+    <div class="row">
+      <div class="col-3 text-start bordercol3 pt-2"> <i class="fa fa-window-maximize px-1"></i>General Info</div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row text-start pt-3 textsize">
+      <div class="col-2 ">Language</div>
+      <div class="col-3 ">View Name</div>
+    </div>
+    <form [formGroup]="viewform" (ngSubmit)="collectData()">
+      <div class="row">
+        <div class="col-2">
+          <input type="hidden" formControlName="id">
+          <select formControlName="language" class="form-control widthfiled">
+            <option value="" disabled selected hidden>English</option>
+            <option value="English">English</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </div>
+        <div class="col-9 ">
+          <input type="text" formControlName="viewname" class="form-control" placeholder="Name">
+          <input type="hidden" formControlName="viewservices">
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-7"></div>
+        <button type="submit" *ngIf="hideSubmitbtn" class="col-2 btn-info btn-info-submit">Create New</button>
+      </div>
+    </form>
+    <div class="row pt-4 px-2">
+      <button class="col-3 widthbtn"><i class="fa fa-plus-circle px-1"></i>Add Translation</button>
+    </div>
+    </div>
+    <div class="container-fluid cntborder">
+      <button *ngIf="showUpdatebtn" class="col-2 btn-info updatebtn" (click)="updateCatData()">Update</button>
+      <button class="col-2 btn-dark mt-2" (click)="closeAddview()">Cancel</button>
+    </div>
